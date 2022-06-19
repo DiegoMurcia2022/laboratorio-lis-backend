@@ -8,15 +8,12 @@ import org.springframework.stereotype.Service;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
-import javax.persistence.Query;
 
 @Service
 public class PatientPersistenceImlp implements PatientPersistence {
-    @Autowired
-    private PatientRepository patientRepository;
+    @Autowired private PatientRepository patientRepository;
 
-    @PersistenceContext
-    private EntityManager entityManager;
+    @PersistenceContext private EntityManager entityManager;
 
     public PatientPersistenceImlp() {
     }
