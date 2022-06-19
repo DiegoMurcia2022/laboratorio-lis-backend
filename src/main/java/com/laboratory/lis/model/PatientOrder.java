@@ -6,21 +6,12 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import java.time.LocalDateTime;
 
-@Entity
-@Table(name = "patient_order")
+@Entity @Table(name = "patient_order")
 public class PatientOrder {
-    @Id
-    @Column(name = "order_id")
-    private String orderId;
-
-    @Column(name = "patient_id")
-    private String patientId;
-
-    @Column(name = "order_date")
-    private LocalDateTime orderDate;
-
-    @Column(name = "order_type")
-    private String orderType;
+    @Id @Column(name = "order_id") private String orderId;
+    @Column(name = "patient_id") private String patientId;
+    @Column(name = "order_date") private LocalDateTime orderDate;
+    @Column(name = "order_type") private String orderType;
 
     public PatientOrder() {
     }

@@ -5,21 +5,12 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-@Entity
-@Table(name = "exam")
+@Entity @Table(name = "exam")
 public class Exam {
-    @Id
-    @Column(name = "exam_id")
-    private String examId;
-
-    @Column(name = "order_id")
-    private String orderId;
-
-    @Column(name = "exam_name")
-    private String examName;
-
-    @Column(name = "exam_result")
-    private float examResult;
+    @Id @Column(name = "exam_id") private String examId;
+    @Column(name = "order_id") private String orderId;
+    @Column(name = "exam_name") private String examName;
+    @Column(name = "exam_result") private float examResult;
 
     public Exam() {
     }

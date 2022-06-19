@@ -13,10 +13,10 @@ import javax.persistence.Query;
 @Service
 public class PatientPersistenceImlp implements PatientPersistence {
     @Autowired
-    PatientRepository patientRepository;
+    private PatientRepository patientRepository;
 
     @PersistenceContext
-    EntityManager entityManager;
+    private EntityManager entityManager;
 
     public PatientPersistenceImlp() {
     }

@@ -9,21 +9,11 @@ import java.time.LocalDate;
 @Entity
 @Table(name = "patient")
 public class Patient {
-    @Id
-    @Column(name = "patient_id")
-    private String patientId;
-
-    @Column(name = "patient_name")
-    private String patientName;
-
-    @Column(name = "patient_surname")
-    private String patientSurname;
-
-    @Column(name = "patient_gender")
-    private String patientGender;
-
-    @Column(name = "patient_birthdate")
-    private LocalDate patientBirthDate;
+    @Id @Column(name = "patient_id") private String patientId;
+    @Column(name = "patient_name") private String patientName;
+    @Column(name = "patient_surname") private String patientSurname;
+    @Column(name = "patient_gender") private String patientGender;
+    @Column(name = "patient_birthdate") private LocalDate patientBirthDate;
 
     public Patient() {
     }
